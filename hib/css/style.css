@@ -1,4 +1,4 @@
-@font-face{
+@font-face {
     font-family: "Roboto";
     src: url("../fonts/Roboto-Medium.ttf");
 }
@@ -8,8 +8,9 @@ body {
 }
 
 .titulo {
-    font-size: 74pt;
-    line-height: 80pt;
+    /*font-size: 74pt;
+    line-height: 80pt;*/
+    font-size: 30px;
     color: blue;
 }
 
@@ -20,61 +21,31 @@ body {
 
 .texto {
     color: #000;
-    font-size: 38pt;
-    line-height: 50pt;
+    /*font-size: 38pt;
+    line-height: 50pt;*/
+    font-size: 16px;
 }
 
-
-a{
-    text-decoration: none;
-}
-a span{
-color: white;
-}
-
-header{
+.flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
-.logo{
-    max-width: 120px;
-}
-
-nav{
-    padding-top: 45px;
+.nav {
+    font-size: 20px;
+    color: blue;
+    height: 15%;
     display: flex;
-    width: 100%;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
-nav a{
-    padding-left: 10px;
-    font-family: "Roboto";
-}
-
-.nav2{
-    margin-left: auto;
-    width: 40%;
-    text-align: right;
-    padding-right: 40px;
-}
-
-.btnBody{
-    background: blue;
-    padding: 15px;
-    display: block;
-    width: 200px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.section1{
-    width: 100%;
-    display: flex;
-    height: 1150px;
-}
-
-.fef{
+.fef {
     width: 50%;
 }
 
@@ -83,14 +54,72 @@ nav a{
     background-image: url(../images/01_Slide.png);
     background-repeat: no-repeat;
     background-position: center top;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
-.slide01{
+.txtLeft {
+    padding: 40% 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a span {
+    color: white;
+}
+
+
+/*header{
+    display: flex;
+    flex-direction: row;
+}*/
+
+.logo {
+    max-width: 120px;
+    position: relative;
+    bottom: -18px;
+}
+
+nav {
+    padding-top: 45px;
+    display: flex;
+    width: 100%;
+}
+
+nav a {
+    padding-left: 10px;
+    font-family: "Roboto";
+}
+
+.nav2 {
+    margin-left: auto;
+    width: 40%;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.btnBody {
+    background: blue;
+    padding: 15px;
+    display: block;
+    width: 200px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+    height: 1150px;
+}
+
+.slide01 {
     position: relative;
     top: -27%;
     z-index: -1;
 }
+
 
 /*.separator{
     z-index: -2;
@@ -103,12 +132,13 @@ nav a{
     height: 174px;
 }*/
 
-.separator{
+.separator {
+    position: relative;
+    top: -60px;
     z-index: -2;
     color: white;
     padding: 50px;
-    position: relative;
-    width: 100%;
+    /*width: 100%;*/
     height: 174px;
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 85%, #ffffff 100%);
@@ -117,7 +147,13 @@ nav a{
     background: -o-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 85%, #ffffff 100%);
     background: -ms-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 85%, #ffffff 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #0000ff 15%, #0000ff 85%, #ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+    display: flex;
+    align-items: center;
+}
+
+.txtSeparator {
+    margin-left: 10%;
 }
 
 .separadorBottom {
@@ -128,18 +164,21 @@ nav a{
     background: -o-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 100%);
     background: -ms-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #0000ff 15%, #0000ff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff', GradientType=0 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff', GradientType=0);
 }
 
-.tarifas{
+.section2 {
+    margin-top: -7%;
+}
+
+.tarifas {
     display: flex;
     flex-direction: row;
     justify-content: center;
     position: relative;
-    top: -75px;
 }
 
-.tarifa-box{
+.tarifa-box {
     display: flex;
     background: white;
     width: 45%;
@@ -148,31 +187,34 @@ nav a{
     padding: 5px;
     box-shadow: 4px 6px 10px 0px;
 }
-.deals{
-    height:865px;
+
+.deals {
+    height: 865px;
 }
-.tarifa{
+
+.tarifa {
     width: 18%;
     min-width: 210px;
     padding: 0px 30px 0 30px;
 }
 
-h3{
+h3 {
     text-align: center;
 }
 
-.btnTarifa{
+.btnTarifa {
     background: blue;
     display: block;
     text-align: center;
     padding: 10px;
 }
-.imgTarifa{
+
+.imgTarifa {
     width: 100%;
     margin-top: 60px;
 }
 
-.tarifaSeparator{
+.tarifaSeparator {
     background: blue;
     width: 1px;
     height: 95%;
@@ -180,7 +222,7 @@ h3{
     transform: translateY(17px);
 }
 
-.tarifaSeparator2{
+.tarifaSeparator2 {
     background: blue;
     width: 1px;
     height: 93%;
@@ -188,58 +230,68 @@ h3{
     transform: translateY(50px);
 }
 
-
-.section3{
+.section3 {
     display: flex;
     justify-content: center;
 }
 
-.mobile-box{
+.mobile-box {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    margin-top: 5%;
+    min-width: 850px;
 }
 
-.mobile-left{
-    width: 17%;
-    justify-content: center;
-    margin-left: 13%;
-    transform: translateY(25%);
-}
-
-.mobile-right{
+.mobile-left {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
 }
-.txtSIM{
+
+.mobileContainer {
+    width: 30%;
+}
+
+.mobile-right {
+    width: 50%;
+    margin-right: 5%;
+}
+
+.txtSIM {
     width: 100%;
     min-width: 200px;
 }
 
-.imgSIM{
+.imgSIM {
     width: 100%;
 }
 
-.imageTV{
+.section4 {
+    background-image: url("../images/03_Image_SkyTV.png");
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.imageTV {
     width: 100%;
 }
 
-.txtimgTV{
-    width: 17%;
-    justify-content: center;
-    position: relative;
-    top: -40em;
-    margin-left: 23%;
-}
+.txtimgTV {}
 
-.section5{
+.section5 {
     display: flex;
     width: 100%;
     justify-content: center;
     flex-direction: row;
 }
 
-.gigafast-left{
+.gigafast-left {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -248,11 +300,12 @@ h3{
     transform: translateY(169px);
 }
 
-.txtGigafast{
+.txtGigafast {
     display: block;
     width: 36%;
     text-align: start;
 }
+
 
 /*.box-Radius{
     background: blue;
@@ -282,10 +335,10 @@ h3{
     background: -o-radial-gradient(center, ellipse cover, #0000ff 0%, #0000ff 60%, #ffffff 100%);
     background: -ms-radial-gradient(center, ellipse cover, #0000ff 0%, #0000ff 60%, #ffffff 100%);
     background: radial-gradient(ellipse at center, #0000ff 0%, #0000ff 60%, #ffffff 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#ffffff', GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#ffffff', GradientType=1);
 }
 
-.txt-Radius{
+.txt-Radius {
     width: 500px;
     height: 500px;
     min-width: 300px;
@@ -298,15 +351,14 @@ h3{
     margin-left: 50px;
     position: relative;
     top: -16px;
-
 }
 
-.landLine-box{
+.landLine-box {
     display: flex;
     flex-direction: row;
 }
 
-.check-box{
+.check-box {
     margin-right: 10px;
     width: 29px;
     height: 16px;
@@ -314,36 +366,35 @@ h3{
     border: 1.5px solid blue;
 }
 
-.txt-Tarifa{
-    margin-top:50px;
+.txt-Tarifa {
+    margin-top: 50px;
 }
 
-.fullFibre-box{
+.fullFibre-box {
     display: flex;
     flex-direction: column;
     width: 90%;
     align-items: center;
 }
 
-.txt-fullFibre{
+.txt-fullFibre {
     width: 50%;
 }
 
-.technology-box{
+.technology-box {
     display: flex;
 }
 
-.fiberType{
+.fiberType {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
     right: 170px;
 }
-footer{
+
+footer {
     margin-top: 150px;
     display: flex;
     flex-direction: row;
-
 }
-
