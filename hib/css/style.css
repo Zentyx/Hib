@@ -38,6 +38,7 @@ body {
 
 .nav {
     font-size: 20px;
+    margin-bottom: 20px;
     color: blue;
     height: 15%;
     display: flex;
@@ -70,10 +71,9 @@ a span {
 }
 
 
-/*header{
-    display: flex;
-    flex-direction: row;
-}*/
+.header{
+    margin-top: 70px;
+}
 
 .logo {
     max-width: 120px;
@@ -157,6 +157,10 @@ nav a {
 }
 
 .separadorBottom {
+    width: 100%;
+    height: 250px;
+    color: #FFF;
+    padding: 50px;
     background: #ffffff;
     background: -moz-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, #ffffff), color-stop(15%, #0000ff), color-stop(100%, #0000ff));
@@ -165,6 +169,13 @@ nav a {
     background: -ms-linear-gradient(top, #ffffff 0%, #0000ff 15%, #0000ff 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #0000ff 15%, #0000ff 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#0000ff', GradientType=0);
+}
+
+.divsfooter {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .section2 {
@@ -189,7 +200,8 @@ nav a {
 }
 
 .deals {
-    height: 865px;
+    height: 965px;
+    margin-bottom: 130px;
 }
 
 .tarifa {
@@ -353,8 +365,13 @@ h3 {
 }*/
 
 .box-Radius {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     width: 30vw;
     height: 30vw;
+    min-width: 200px;
+    min-height: 200px;
     border-radius: 50%;
     background: blue;
     text-align: center;
@@ -370,18 +387,38 @@ h3 {
 }
 
 .txt-Radius {
-    width: 500px;
-    height: 500px;
-    min-width: 300px;
-    min-height: 300px;
+    width: 25vw;
+    height: 25vw;
+    min-width: 170px;
+    min-height: 170px;
     border-radius: 50%;
     font-size: 50px;
     color: blue;
     text-align: center;
     background: white;
-    margin-left: 50px;
     position: relative;
-    top: -16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius-container {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.radius-container span:nth-child(1) {
+    font-size: 50%;
+    font-weight: bold;
+}
+
+.radius-container span:nth-child(3) {
+    font-size: 40%;
+    font-weight: bold;
 }
 
 .landLine-box {
