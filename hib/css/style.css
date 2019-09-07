@@ -38,9 +38,8 @@ body {
 
 .nav {
     font-size: 20px;
-    margin-bottom: 20px;
     color: blue;
-    height: 15%;
+    /* height: 15%; */
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -58,6 +57,11 @@ body {
     background-size: 100% 100%;
 }
 
+.fefright{
+    margin-top:60px;
+    width: 50%;
+}
+
 .txtLeft {
     padding: 40% 30%;
 }
@@ -70,10 +74,17 @@ a span {
     color: white;
 }
 
-
-.header{
-    margin-top: 70px;
+h2{
+    color: blue;
 }
+
+p strong{
+    color: #000000b5;
+}
+/*header{
+    display: flex;
+    flex-direction: row;
+}*/
 
 .logo {
     max-width: 120px;
@@ -138,6 +149,7 @@ nav a {
     z-index: -2;
     color: white;
     padding: 50px;
+    font-size: 28pt;
     /*width: 100%;*/
     height: 174px;
     background: #ffffff;
@@ -178,8 +190,18 @@ nav a {
     justify-content: center;
 }
 
+.tarifa h3{
+    color:blue;
+}
+.tarifa p span{
+    color:blue;
+}
+.price{
+    font-size: 24pt;
+}
 .section2 {
-    margin-top: -7%;
+    /*margin-top: -7%;*/
+    background-color: rebeccapurple;
 }
 
 .tarifas {
@@ -187,6 +209,7 @@ nav a {
     flex-direction: row;
     justify-content: center;
     position: relative;
+    top: -150px;
 }
 
 .tarifa-box {
@@ -195,13 +218,12 @@ nav a {
     width: 45%;
     min-width: 850px;
     justify-content: center;
-    padding: 5px;
+    padding: 5px 0 25px 0;
     box-shadow: 4px 6px 10px 0px;
 }
 
 .deals {
-    height: 965px;
-    margin-bottom: 130px;
+    height: 865px;
 }
 
 .tarifa {
@@ -252,7 +274,7 @@ h3 {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     min-width: 850px;
 }
 
@@ -265,7 +287,9 @@ h3 {
 }
 
 .mobileContainer {
-    width: 30%;
+    text-align: justify;
+    color: #00000099;
+    width: 50%;
 }
 
 .mobile-right {
@@ -276,6 +300,7 @@ h3 {
 .txtSIM {
     width: 100%;
     min-width: 200px;
+    font-size: 14pt;
 }
 
 .imgSIM {
@@ -300,8 +325,16 @@ h3 {
 }
 
 .txtimgTV {
-    width: 30%;
+    width: 45%;
 }
+
+.txtimgTV h2{
+font-size: 28pt;
+}
+
+
+
+
 
 .section5 {
     display: flex;
@@ -331,24 +364,6 @@ h3 {
     display: flex;
     justify-content: center;
 }
-
-
-/*
-.gigafast-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    width: 30%;
-    align-items: start;
-    transform: translateY(169px);
-}
- 
-.txtGigafast {
-    display: block;
-    width: 36%;
-    text-align: start;
-}
-*/
 
 
 /*.box-Radius{
@@ -385,7 +400,6 @@ h3 {
     background: radial-gradient(ellipse at center, #0000ff 0%, #0000ff 60%, #ffffff 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#ffffff', GradientType=1);
 }
-
 .txt-Radius {
     width: 25vw;
     height: 25vw;
@@ -401,7 +415,6 @@ h3 {
     align-items: center;
     justify-content: center;
 }
-
 .radius-container {
     width: 20vw;
     height: 20vw;
@@ -412,14 +425,18 @@ h3 {
 }
 
 .radius-container span:nth-child(1) {
-    font-size: 50%;
+    font-size: 2vw;
+}
+.radius-container span:nth-child(2) {
+    font-size: 6vw;
     font-weight: bold;
 }
 
 .radius-container span:nth-child(3) {
-    font-size: 40%;
-    font-weight: bold;
+    font-size: 1.5vw;
 }
+
+
 
 .landLine-box {
     display: flex;
@@ -459,6 +476,10 @@ h3 {
     justify-content: space-around;
     position: relative;
     right: 170px;
+}
+
+.txtSIMdeals{
+    width: 38%;
 }
 
 footer {
